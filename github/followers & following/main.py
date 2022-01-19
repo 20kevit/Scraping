@@ -39,9 +39,8 @@ username = "20kevit"
 followers = find(username)
 following = find(username, "following")
 
-print(len(followers))
-print(len(following))
-input()
+print("followers: ", len(followers))
+print("following: ", len(following))
 
 unfollowers = [person for person in following if(not person in followers)]
 fans = [person for person in followers if(not person in following)]
