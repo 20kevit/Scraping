@@ -34,7 +34,7 @@ def find(user_name, tab="followers"):
     return results
 
 #replace it with your username:
-username = "fabpot"
+username = "20kevit"
 
 followers = find(username)
 following = find(username, "following")
@@ -45,7 +45,6 @@ input()
 
 unfollowers = [person for person in following if(not person in followers)]
 fans = [person for person in followers if(not person in following)]
-
 
 print("people who didn't followed back:")
 for person in unfollowers:
